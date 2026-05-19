@@ -1,6 +1,6 @@
 @font-face{
     font-family: "Clash Display";
-    src: url(.font/fonts/TTF);
+    src: url(fonts/TTF/ClashDisplay-Variable.woff2);
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
