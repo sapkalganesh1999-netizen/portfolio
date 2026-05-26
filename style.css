@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100%;
     display: flex;
-    padding: 16px 50px;
+    padding: 16px clamp(20px, 5vw, 50px);
     justify-content: space-between;
     align-items: center;
     background: rgba(0,0,0,0.2);
@@ -97,6 +97,7 @@ body {
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
+    margin-top: 4lh;
 }
 h2{
     color: var(--greys-scale-0, #FFF);
@@ -138,9 +139,11 @@ h1{
     border-bottom: 0.5px solid var(--greys-scale-500, #777);
 }
 .my-img{
-    height: 509px;
-    align-self: stretch;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
     border-radius: 18px;
+    transform: scaleX(-1);
 }
 .header:hover{
     background: rgba(0,0,0,0.35);
@@ -240,7 +243,7 @@ background: url(<path-to-image>) lightgray 0.008px 118.39px / 100% 72.652% no-re
 .Project-Description{
     display: flex;
     align-items: flex-start;
-    gap: 252px;
+    justify-content: space-between;
     align-self: stretch;
 }
 .Project-Link-btn{
@@ -261,6 +264,8 @@ background: url(<path-to-image>) lightgray 0.008px 118.39px / 100% 72.652% no-re
     text-transform: uppercase;
 }
 .Project-Text{
+    width: 25%;
+    margin-left: 5lh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -342,4 +347,31 @@ h6{
     align-items: center;
     gap: 32px;
     align-self: stretch;
+}
+.resume{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+   display: flex;
+   flex-wrap: nowrap;
+   font color: #FFFFFF;
+}
+.skills-wrapper{
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.skills-track{
+    display: flex;
+    gap: 40px;
+    width: max-content;
+}
+
+.skills-track span{
+    white-space: nowrap;
+    font-size: 20px;
 }

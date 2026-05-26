@@ -62,3 +62,20 @@ window.addEventListener("scroll", () => {
 
     lastScroll = currentScroll;
 });
+const track = document.querySelector(".skills-track");
+
+let position = 0;
+
+function animate(){
+    position--;
+
+    if(position <= -track.scrollWidth / 2){
+        position = 0;
+    }
+
+    track.style.transform = `translateX(${position}px)`;
+
+    requestAnimationFrame(animate);
+}
+
+animate();
