@@ -1,10 +1,6 @@
 @font-face{
     font-family: "Clash Display";
-    src: url(fonts/TTF/ClashDisplay-Variable.woff2);
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+    src: url("fonts/TTF/ClashDisplay-Variable.woff2") format("woff2");
 }
 *{
     box-sizing: border-box;
@@ -44,15 +40,21 @@ body {
     border-radius: 50px;
     background-color: transparent;
     color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
     .btn:hover{
     text-decoration: underline;
-    text-underline-offset: 5px  ;
+    text-underline-offset: 5px;
+    letter-spacing: 2px;
     }
 .Navigation{
     display: flex;
     align-items: center;
-    gap: 15px;   
+    gap: 15px;  
+    
 }
 .btn2{
     color: #FFFFFF;
@@ -63,13 +65,20 @@ body {
     gap: 10px;
     border-radius: 50px;
     border: 3px;
-    background: var(--greys-scale-700, #474747);
+    background: linear-gradient(95deg, #7F7286 0.2%, #0C0911 111.86%);font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
     .btn2:hover{
-    color: var(--greys-scale-0, #474747);
-    background: var(--greys-scale-700, #eaeaea);
+    color: var(--greys-scale-0, #FFF);
+    background: linear-gradient(95deg, #CCB6D8 0.2%, #57386D 111.86%);
     text-decoration: underline;
     text-underline-offset: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
     }
 .Hero-Content{
     position: relative;
@@ -190,22 +199,6 @@ h1{
     gap: 28px;
     align-self: stretch;
 }
-ul{
-    color: #FFF;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: center;
-    font-family: "DM Sans";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 110%; /* 33px */
-    letter-spacing: 0.6px;
-    text-transform: capitalize;
-}
 h4{
     color: var(--greys-scale-100, #E2E2E2);
     font-family: "Clash Display";
@@ -237,8 +230,7 @@ h4{
     width: 657px;
     height: 434px;
     border-radius: 18px;
-border: 0.5px solid #91784C;
-background: url(<path-to-image>) lightgray 0.008px 118.39px / 100% 72.652% no-repeat, linear-gradient(247deg, #574527 -23.29%, #1E1E1E 86.77%);
+    border: 0.5px solid #91784C;
 }
 .Project-Description{
     display: flex;
@@ -264,7 +256,6 @@ background: url(<path-to-image>) lightgray 0.008px 118.39px / 100% 72.652% no-re
     text-transform: uppercase;
 }
 .Project-Text{
-    width: 25%;
     margin-left: 5lh;
     display: flex;
     flex-direction: column;
@@ -352,26 +343,40 @@ h6{
     text-decoration: none;
     color: inherit;
 }
-ul{
-   display: flex;
-   flex-wrap: nowrap;
-   font color: #FFFFFF;
-}
 .skills-wrapper{
     overflow: hidden;
     width: 100%;
     padding: 20px 0;
     color: #FFFFFF;
-    font-size: 20px;
 }
 
 .skills-track{
     display: flex;
     gap: 40px;
     width: max-content;
+    font-family: "DM Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 110%; /* 33px */
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+    display: flex;
+    gap: 20px;
 }
 
 .skills-track span{
     white-space: nowrap;
-    font-size: 20px;
+    font-family: "DM Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 110%;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+}
+
+.skills-track span::before{
+    content: "•";
+    margin-right: 8px;
 }
