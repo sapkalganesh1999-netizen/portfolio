@@ -271,26 +271,46 @@ h4{
     gap: 49px;
     align-self: stretch;
 }
-.Project02-Image{
+.project02{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 20px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 49px;
     align-self: stretch;
-    flex-wrap: wrap;
+}
+.Project02-Image{
+    display: grid;
+    height: 888px;
+    row-gap: 20px;
+    column-gap: 20px;
+    align-self: stretch;
+    grid-template-rows: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(2,minmax(0,1fr));
 }
 #imgp21{
-    width: 1340px;
-    height: 434px;
+    align-self: stretch;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    justify-self: stretch;
+    border-radius: 18px;
+    background: url(images/main\ img\ case\ study.png) lightgray 842.93px -58.25px / 54.776% 126.844% no-repeat, linear-gradient(90deg, #000 -6.96%, rgba(255, 255, 255, 0.00) 168.92%);
 }
 #imgp22{
-    width: 773px;
-    height: 434px;
+    align-self: stretch;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    justify-self: stretch;
+    border-radius: 18px;
+    background: url(images/2nd\ imag\ of\ case\ study.png) lightgray -0.002px -93.945px / 100% 133.609% no-repeat;
 }
 #imgp23{
-    width: 547px;
-    height: 434px;
+    align-self: stretch;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    justify-self: stretch;
+    border-radius: 18px;
+    background: url(images/Image.png) lightgray -34.316px -112.527px / 124.784% 179.742% no-repeat;
 }
 .Footer{
     display: flex;
