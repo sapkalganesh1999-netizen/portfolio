@@ -182,14 +182,14 @@ h1{
     letter-spacing: 2.19px;
     text-transform: uppercase;
 }
-#bodytext{
+.bodytext{
     color: var(--greys-scale-100, #E2E2E2);
     font-family: "DM Sans";
     font-size: 30px;
     font-style: normal;
-    font-weight: 200;
-    line-height: 110%; /* 33px */
-    letter-spacing: 0.6px;
+    font-weight: 300;
+    line-height: 140%; /* 33px */
+    letter-spacing: 1.5px;
     text-transform: capitalize;
 }
 .abuot02{
@@ -377,9 +377,9 @@ h6{
     font-family: "DM Sans";
     font-size: 30px;
     font-style: normal;
-    font-weight: 200;
-    line-height: 110%; /* 33px */
-    letter-spacing: 0.6px;
+    font-weight: 300;
+    line-height: 140%; /* 33px */
+    letter-spacing: 1.5px;
     text-transform: capitalize;
     display: flex;
     gap: 20px;
@@ -390,9 +390,9 @@ h6{
     font-family: "DM Sans";
     font-size: 30px;
     font-style: normal;
-    font-weight: 200;
-    line-height: 110%;
-    letter-spacing: 0.6px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 1.5px;
     text-transform: capitalize;
 }
 
