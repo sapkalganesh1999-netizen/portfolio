@@ -70,15 +70,16 @@ body {
     font-weight: 500;
     letter-spacing: 2px;
 }
-    .btn2:hover{
-    color: var(--greys-scale-0, #FFF);
-    background: linear-gradient(95deg, #CCB6D8 0.2%, #57386D 111.86%);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 2px;
+    .btn2:hover {
+   color: #FFF;
+   background: linear-gradient(95deg, #CCB6D8 0.2%, #57386D 111.86%);
+    }
+    .btn2:hover span {
+   text-decoration: underline;
+   text-underline-offset: 3px;
+    }
+    .btn2:hover i {
+   transform: translateX(4px);
     }
 .Hero-Content{
     position: relative;
@@ -343,7 +344,7 @@ h6{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 32px;
     align-self: stretch;
 }
 .Social{
@@ -352,12 +353,14 @@ h6{
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+    flex-shrink: 0;
 }
 .listo1{
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 10px;
     align-self: stretch;
+    flex-wrap: wrap;
 }
 .resume{
     text-decoration: none;
@@ -399,4 +402,26 @@ h6{
 .skills-track span::before{
     content: "•";
     margin-right: 8px;
+}
+.listo1 a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.listo1 a i {
+    font-size: 24px;
+}
+.Contact-Info{
+    flex: 1;
+}
+.Contact-Info h5{
+    font-size: 80px;
+}
+.Contact-Info h5{
+    font-size: clamp(32px, 5vw, 72px);
+    word-break: break-word;
 }
