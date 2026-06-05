@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Clash Display";
+    font-family: "Clash";
     src: url("fonts/TTF/ClashDisplay-Variable.woff2") format("woff2");
 }
 
@@ -31,30 +31,40 @@ body{
     min-height:100vh;
     color:var(--white);
 }
-
-.header{
-    position:fixed;
+@media screen and (min-width:786px) {
+    width: 90%;
+    padding: 24px;
+}
+@media screen and (min-width:1024px) {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (min-width:1024px) {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px clamp(20px,5vw,50px);
+    position: fixed;
+    width: 100vw;
     top:0;
     left:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:16px clamp(20px,5vw,50px);
     background:rgba(0,0,0,.2);
     backdrop-filter:blur(12px);
     -webkit-backdrop-filter:blur(12px);
-    border-bottom:.5px solid var(--border);
     z-index:1000;
-    transition:transform .4s ease;
+    transition:transform .4s ease-in-out;
 }
-
-.header:hover{
-    background:rgba(0,0,0,.35);
+.ri-menu-line{
+    display: none;
 }
-
-.header.hide{
-    transform:translateY(-100%);
+header.hidden{
+    transform: translateY(-100%);
 }
 
 .Navigation{
