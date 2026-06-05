@@ -26,20 +26,17 @@ html{
 }
 
 body{
-    font-family:"Clash Display";
+    font-family:"Clash";
     background:linear-gradient(267deg,#666 -82.17%,#000 117.22%);
     min-height:100vh;
     color:var(--white);
 }
+\\tablet\\
 @media screen and (min-width:786px) {
     width: 90%;
-    padding: 24px;
+    padding: 3.053vw;
 }
-@media screen and (min-width:1024px) {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+\\/tablet*
 @media screen and (min-width:1024px) {
     width: 80%;
     max-width: 1200px;
@@ -47,8 +44,8 @@ body{
 }
 header{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 16px clamp(20px,5vw,50px);
     position: fixed;
     width: 100vw;
@@ -60,21 +57,19 @@ header{
     z-index:1000;
     transition:transform .4s ease-in-out;
 }
-.ri-menu-line{
-    display: none;
-}
 header.hidden{
     transform: translateY(-100%);
 }
-
+.ri-menu-line{
+    display: none;
+}
 .Navigation{
     display:flex;
-    align-items:center;
+    align-items:self-start;
+    justify-items: flex-start;
     gap:15px;
 }
-
-.btn,
-.btn2{
+.btn,.btn2{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -82,7 +77,7 @@ header.hidden{
     padding:16px 34px;
     border:none;
     border-radius:var(--radius-pill);
-    font-size:20px;
+    font-size:1.389vw;
     font-weight:500;
     letter-spacing:2px;
     text-transform:uppercase;
