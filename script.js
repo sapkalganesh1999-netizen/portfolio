@@ -44,7 +44,7 @@
 }();
 let lastScroll = 0;
 
-const header = document.querySelector(".header");
+const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
 
